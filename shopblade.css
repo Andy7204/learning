@@ -1,0 +1,87 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+}
+ul li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+}
+.Nav:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/wlp1.jpg);
+    height:200px;
+    background-size: cover;
+    background-position: center;
+}
+.logo img {
+    float:left;
+    width:100px;
+    height: 50px;
+    margin: 5px;
+}
+.main {
+    max-width: 1200px;
+    margin:auto;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+    margin: 3px;
+} 
+.title {
+    position:  absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: popup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: ease;
+    animation-timing-function: ease;
+}
+@keyframes popup {
+    0% {
+        top:45%;
+    }
+    100% {
+        top:40%;
+        
+    }
+    
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.book img {
+    height: 150;
+    width:140px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 5px solid #636363;
+}
+.book {
+    margin: 10px 5px 10px 25px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    border: 2px solid #888888 ;
+    width: 200px;
+    padding: 3px;
+}
